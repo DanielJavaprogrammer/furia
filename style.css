@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --padding-basic: 10px;
+    --padding-medium: 20px;
+    --padding-big: 30px;
+
+    --white: #fff;
+    --black-dark-1: rgb(31,34,40);
+    --black: #000;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    position: relative;
+}
+
+header nav{
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+header nav a {
+    position: relative;
+    text-decoration: none;
+    color: var(--black);
+    padding-bottom: 4px;
+}
+
+header nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1.6px;
+    background-color:#06003d;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+header .logo_header img{
+    max-width: 90px;
+}
+
+#call_chatbox {
+    background-color: #06003d; 
+    color: var(--white);
+    border: 2px solid black;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transform: skew(-20deg);
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+  
+#call_chatbox span {
+    display: inline-block;
+    transform: skew(20deg);
+}
+  
+#call_chatbox:hover {
+    background-color: #3b2cc5;
+    box-shadow: 3px 3px 0 black;
+}
+
+.menu_mobile{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-big);
+    right: 0px;
+    top: 0;
+    background-color: var(--black-dark-1);
+    width: 150px;
+    height: 100vh;
+    text-align: center;
+    padding-top: var(--padding-big);
+}
+
+.menu_mobile nav{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu_mobile nav a{
+    color: var(--white);
+}
+
+.abrir_menu{
+    display: none;
+    cursor: pointer;
+}
+
+.fechar_menu{
+    display: block;
+}
+
+@media screen and (max-width: 765px){
+    .nav_full{
+        display: none;
+    }
+
+    .abrir_menu{
+        display: flex;
+    }
+}
+
+main{
+    background-color: var(--black-dark-1);
+    max-width: 100%;
+    height: 100%;
+}
