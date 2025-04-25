@@ -91,19 +91,19 @@ header .logo_header img{
     display: flex;
     flex-direction: column;
     gap: var(--padding-big);
-    right: 0px;
+    right: -1000px;
     top: 0;
     background-color: var(--black-dark-1);
-    width: 150px;
+    width: 200px;
     height: 100vh;
     text-align: center;
     padding-top: var(--padding-big);
+    transition: .3s all ease-in-out;
 }
 
 .menu_mobile nav{
     display: flex;
     flex-direction: column;
-
 }
 
 .menu_mobile nav a{
@@ -113,11 +113,19 @@ header .logo_header img{
 .abrir_menu{
     display: none;
     cursor: pointer;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.abrir_menu:hover{
+    background-color: rgba(128, 128, 128, 0.288);
 }
 
 .fechar_menu{
-    display: block;
+    cursor: pointer;
+    color: var(--white);
 }
+
 
 @media screen and (max-width: 765px){
     .nav_full{
