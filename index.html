@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <!-- Google Fonts: Roboto -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-        <!-- Google Material Symbols (ícones) -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="assets/furia_esports_logo.png" type="image/x-icon">
-    
-        <!-- Seu CSS -->
-        <link rel="stylesheet" href="style.css">
-    
-        <title>Furia | ChatBox</title>
-    </head>
-    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts: Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Material Symbols (ícones) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/furia_esports_logo.png" type="image/x-icon">
+
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Furia | ChatBox</title>
+</head>
+
 <body>
     <header>
-        <nav class="nav_full">
-            <a href="https://www.furia.gg/">Furia GG</a>
-            <a href="https://x.com/FURIA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>
+        <!-- Desktop Navigation -->
+        <nav class="nav_full" aria-label="Main navigation">
+            <a href="https://www.furia.gg/" rel="noopener noreferrer" target="_blank">Furia GG</a>
+            <a href="https://x.com/FURIA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                target="_blank">Twitter</a>
             <a href="#curiosidades">Curiosidades</a>
         </nav>
 
+        <!-- Logo -->
         <div class="logo_header">
-            <img src="assets/furia_header.png" alt="Nome da Furia">
+            <img src="assets/furia_header.png" alt="FURIA Esports Logo">
         </div>
 
+        <!-- Chatbot Button -->
         <div class="call_chatbot">
             <button id="call_chatbox">Chatbox Furia</button>
         </div>
 
-        <div class="abrir_menu">
-            <span class="material-symbols-outlined">menu</span>
+        <!-- Open Menu -->
+        <div class="abrir_menu" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="material-symbols-outlined" aria-hidden="true">menu</span>
         </div>
 
-        <div class="menu_mobile">
-            <div class="fechar_menu">
-                <span class="material-symbols-outlined">close</span>
+        <!-- Mobile Menu -->
+        <div id="menu_mobile">
+            <!-- Close menu -->
+            <div class="fechar_menu" aria-label="Close menu">
+                <span class="material-symbols-outlined" aria-hidden="true">close</span>
             </div>
             <nav class="nav_mobile">
-                <a href="https://www.furia.gg/">Furia GG</a>
-                <a href="https://x.com/FURIA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>
+                <a href="https://www.furia.gg/" rel="noopener noreferrer">Furia GG</a>
+                <a href="https://x.com/FURIA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                    target="_blank">Twitter</a>
                 <a href="#curiosidades">Curiosidades</a>
             </nav>
         </div>
@@ -55,9 +65,34 @@
 
 
     <main class="main_conteiner">
+        <div class="background">
+            <div class="main_background_header">
+                <img src="/assets/furia_esports_logo.png" alt="Furia Logo">
+                <h1>Conecte-se com a Furia como nunca antes!</h1>
+            </div>
+            <button class="btn">Iniciar Chat</button>
+        </div>
 
+        <article class="presentation_section">
+            <section class="furia_team_image">
+                <img src="/assets/foto-1.png" alt="foto do time da furia">
+            </section>
+            <section class="chat_intro_text">
+                <h2> FURIA e Você: Uma Nova Conexão</h2>
+                <h3>Entre para o nosso mundo e viva cada emoção da FURIA!</h3>
+                <p>Não perca nenhum momento! Fique por dentro de notícias, curiosidades, datas de jogos, eventos e muito
+                    mais — tudo de um jeito rápido e fácil com o nosso Chatbox "FURIA e Você"!</p>
+
+            </section>
+        </article>
     </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Projeto FURIA GG ChatBox.</p>
+        <p>Feito com ❤️ para os fãs da FURIA.</p>
+    </footer>
 
     <script src="logic.js"></script>
 </body>
+
 </html>
