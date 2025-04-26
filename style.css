@@ -140,7 +140,7 @@ header .logo_header img {
 }
 
 .background {
-    background-image: url(/assets/background.png);
+    background-image: url(assets/background.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
