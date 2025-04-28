@@ -15,6 +15,24 @@ document.querySelector(".fechar_menu").addEventListener("click", () => {
 //Fechar menu ao redimensionar a tela
 window.addEventListener("resize", () => {
     if (window.innerWidth > 765) {
-        document.querySelector(".menu_mobile").style.right = "-1000px";
+        document.querySelector("#menu_mobile").style.right = "-1000px";
     }
 });
+
+
+// Seletor para todos os botões que abrem o chat
+document.querySelectorAll('.open-chat-button').forEach(button => {
+    button.addEventListener('click', function () {
+        openChatbot();
+    });
+});
+
+// Função para abrir o chat diretamente
+function openChatbot() {
+    const chat = document.querySelector('.chatbot-furia');
+    if (chat) {
+        chat.classList.add('show');
+    } else {
+        console.log('Chatbot não encontrado.');
+    }
+}

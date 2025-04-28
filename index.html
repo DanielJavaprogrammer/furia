@@ -40,7 +40,7 @@
 
         <!-- Chatbot Button -->
         <div class="call_chatbot">
-            <button id="call_chatbox">Chatbox Furia</button>
+            <button id="call_chatbox" class="open-chat-button">Chatbox Furia</button>
         </div>
 
         <!-- Open Menu -->
@@ -70,7 +70,7 @@
                 <img src="assets/furia_esports_logo.png" alt="Furia Logo">
                 <h1>Conecte-se com a Furia como nunca antes!</h1>
             </div>
-            <button class="btn">Iniciar Chat</button>
+            <button class="btn open-chat-button show" id="start-chat">Iniciar Chat</button>
         </div>
 
         <article class="presentation_section">
@@ -85,6 +85,14 @@
 
             </section>
         </article>
+
+        <div class="chatbot-furia">
+            <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+            <df-messenger intent="welcome" chat-title="FuriaChatBox" agent-id="46ff3175-8f1b-40a3-b41a-9d7e341a85f3"
+                language-code="pt-br"
+                chat-icon="https://upload.wikimedia.org/wikipedia/pt/thumb/f/f9/Furia_Esports_logo.png/250px-Furia_Esports_logo.png">
+            </df-messenger>
+        </div>
     </main>
 
     <footer class="footer">
