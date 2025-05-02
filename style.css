@@ -139,6 +139,9 @@ header .logo_header img {
     }
 }
 
+/* End Header */
+
+/* Begin Menu Content */
 .background {
     background-image: url(assets/background.png);
     background-attachment: fixed;
@@ -303,6 +306,9 @@ header .logo_header img {
     opacity: 1;
 }
 
+/* End menu content */
+
+/* Begin Footer */
 .footer {
     background-color: var(--black);
     /* preto, combina com o estilo da Furia */
